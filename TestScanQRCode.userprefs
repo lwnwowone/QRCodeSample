@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="ScanQRCode/ScanQRCode.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScanQRCode/QRCodeCreater.cs">
+    <Files>
+      <File FileName="ScanQRCode/QRCodeCreater.cs" Line="55" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ScanQRCode PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2ebc00d9ceeeb2463a63de16567a1aa36c0e4f18" />
+  <DisabledProjects>
+    <String>TestScanQRCode/TestScanQRCode.csproj</String>
+  </DisabledProjects>
+</Properties>

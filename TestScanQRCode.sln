@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanQRCode", "ScanQRCode\ScanQRCode.csproj", "{715E7B60-DA75-4884-A91E-8FA8669B633A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Release|iPhone.Build.0 = Release|iPhone
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{715E7B60-DA75-4884-A91E-8FA8669B633A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
