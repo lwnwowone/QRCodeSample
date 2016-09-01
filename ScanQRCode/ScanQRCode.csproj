@@ -96,15 +96,18 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MainViewController.cs" />
-    <Compile Include="QRCodeReaderViewController.cs" />
-    <Compile Include="QRCodeReaderView.cs" />
-    <Compile Include="GlobalObject.cs" />
-    <Compile Include="ScanAnimateView.cs" />
-    <Compile Include="QRCodeCreater.cs" />
+    <Compile Include="QRLibrary\QRCodeCreater.cs" />
+    <Compile Include="QRLibrary\QRCodeReaderView.cs" />
+    <Compile Include="QRLibrary\QRCodeReaderViewController.cs" />
+    <Compile Include="QRLibrary\ScanAnimateView.cs" />
+    <Compile Include="QRLibrary\QRCodeGlobalObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
   <ItemGroup>
     <BundleResource Include="Resources\beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QRLibrary\" />
   </ItemGroup>
 </Project>

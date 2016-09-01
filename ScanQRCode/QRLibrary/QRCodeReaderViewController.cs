@@ -23,7 +23,7 @@ namespace TestScanQRCode
 
 		private QRCodeReaderViewController ()
 		{
-			GlobalObject.TheQRCodeReaderViewController = this;
+			QRCodeGlobalObject.TheQRCodeReaderViewController = this;
 
 			readerView = new QRCodeReaderView (this);
 			this.View = readerView;
@@ -55,7 +55,7 @@ namespace TestScanQRCode
 		public void Close()
 		{
 			this.DismissViewController (true, delegate {
-				GlobalObject.TheAppDel.CanReceiveData = true;
+				QRCodeGlobalObject.TheAppDel.CanReceiveData = true;
 			});
 		}
 	}

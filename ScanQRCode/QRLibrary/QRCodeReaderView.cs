@@ -29,14 +29,18 @@ namespace TestScanQRCode
 				scanAnimateView.StartAnimation ();
 			}
 			else {
-				UIAlertView alert = new UIAlertView ("Error", "Please restart this view", null, "OK", null);
+				UIAlertView alert = new UIAlertView ("Init Error", "Don't have access to camera, please allow and restart this view", null, "OK", null);
+				alert.Clicked += delegate {
+					thisController.DismissViewController(true,null);
+				};
 				alert.Show ();
 			}
 		}
 
 		public void StopScan()
 		{
-			session.StopRunning ();
+			if(null != session)
+				session.StopRunning ();
 		}
 
 		public QRCodeReaderView (QRCodeReaderViewController _thisController)
@@ -150,7 +154,7 @@ namespace TestScanQRCode
 							SetupCapture ();
 						}
 						else{
-							Console.WriteLine ("访问受限");
+							Console.WriteLine ("Access denied");
 						}
 					}));
 					break;
@@ -160,7 +164,7 @@ namespace TestScanQRCode
 					break;
 				}
 			case AVAuthorizationStatus.Restricted:{
-					Console.WriteLine ("访问受限");
+					Console.WriteLine ("Access denied");
 					break;
 				}
 			default:{
@@ -195,7 +199,7 @@ namespace TestScanQRCode
 
 			// 创建dispatch queue.
 			DispatchQueue dispatchQueue = new DispatchQueue ("kScanQRCodeQueueName");
-			metadataOutput.SetDelegate (GlobalObject.TheAppDel, dispatchQueue);
+			metadataOutput.SetDelegate (QRCodeGlobalObject.TheAppDel, dispatchQueue);
 
 			// 设置元数据类型 AVMetadataObjectTypeQRCode
 			metadataOutput.MetadataObjectTypes = AVMetadataObjectType.QRCode;

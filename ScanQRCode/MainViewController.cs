@@ -44,7 +44,7 @@ namespace TestScanQRCode
 			this.Add (showQRCodeImgView);
 
 			UITapGestureRecognizer tapGR = new UITapGestureRecognizer (() => {
-				Console.WriteLine("tapGR");
+				Console.WriteLine("Create a new code according to the text");
 				tf.ResignFirstResponder();
 				string sourceStr = tf.Text.Trim();
 				showQRCodeImgView.Image = QRCodeCreater.Instance().GetQRCodeImageByString(sourceStr,showQRCodeImgView.Frame.Width);

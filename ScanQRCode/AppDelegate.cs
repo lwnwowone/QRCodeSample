@@ -15,7 +15,7 @@ namespace TestScanQRCode
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			GlobalObject.TheAppDel = this;
+			QRCodeGlobalObject.TheAppDel = this;
 
 			navController = new UINavigationController (new MainViewController ());
 
@@ -90,7 +90,7 @@ namespace TestScanQRCode
 		[Export("reportScanResult:")]
 		void ReportScanResult(NSString result)
 		{
-			GlobalObject.TheQRCodeReaderViewController.ReturnResult (result.ToString());
+			QRCodeGlobalObject.TheQRCodeReaderViewController.ReturnResult (result.ToString());
 
 			NSData data = NSData.FromFile(NSBundle.MainBundle.PathForResource ("beep", "wav"));
 			NSError error = new NSError ();

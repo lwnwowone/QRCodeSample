@@ -3,7 +3,7 @@ using UIKit;
 
 namespace TestScanQRCode
 {
-	public static class GlobalObject
+	public static class QRCodeGlobalObject
 	{
 		public static AppDelegate TheAppDel{get;set;}
 		public static QRCodeReaderViewController TheQRCodeReaderViewController{get;set;}
